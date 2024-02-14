@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
   <title>Ebac - Maratonando Python 2024</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/main.scss">
 </head>
 
@@ -24,20 +25,20 @@
         </div>
       </div>
 
-      <div class="time-counter">
+      <div data-aos="fade-up" data-aos-duration="1600" class="time-counter">
         <p id="counter-text"></p>
         <p id="counter"></p>
       </div>
 
       <div class="infos-bar">
-        <div class="infos-bar__content infos-bar__content--left">
+        <div data-aos="fade-up" data-aos-duration="1500" class="infos-bar__content infos-bar__content--left">
           <div class="infos-bar__text">
             <h2>O que é?</h2>
             <p>3 cursos, com mais de 40 horas de aula</p>
           </div>
         </div>
 
-        <div class="infos-bar__content infos-bar__content--right">
+        <div data-aos="fade-up" data-aos-duration="1500" class="infos-bar__content infos-bar__content--right">
           <div class="infos-bar__text">
             <h2>Onde?</h2>
             <p>Através da plataforma de cursos da EBAC</p>
@@ -45,16 +46,18 @@
         </div>
       </div>
 
-      <a href="#form-event" class="smooth-scroll button button--primary">ASSISTIR GRATUITAMENTE</a>
-      <p class="infos-bar__purchase-call">Participe da Maratona Full Stack Python e descubra as melhores práticas para
-        impulsionar seus projetos de desenvolvimento.</p>
+      <div data-aos="zoom-in-up" data-aos-duration="1200">
+        <a href="#form-event" class="smooth-scroll button button--primary">ASSISTIR GRATUITAMENTE</a>
+        <p class="infos-bar__purchase-call">Participe da Maratona Full Stack Python e descubra as melhores práticas para
+          impulsionar seus projetos de desenvolvimento.</p>
+      </div>
 
     </div>
   </header>
 
   <section class="event-regis">
     <div class="container">
-      <div class="event-regis__content">
+      <div data-aos="fade-right" data-aos-duration="1500" class="event-regis__content">
         <h2>Por que participar da <br>Maratona Full Stack Python?</h2>
         <div class="event-regis__content__details">
           <i class="icon-check fa-regular fa-circle-check"></i>
@@ -71,7 +74,7 @@
         </div>
       </div>
 
-      <div id="form-event" class="event-regis__form">
+      <div data-aos="fade-left" data-aos-duration="1500" id="form-event" class="event-regis__form">
         <h2>Acesso rápido e 100% gratuito</h2>
         <p>Basta preencher o formulário abaixo:</p>
         <form class="">
@@ -98,7 +101,7 @@
   </footer>
 
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/8a7daa21a0.js" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
 </body>
