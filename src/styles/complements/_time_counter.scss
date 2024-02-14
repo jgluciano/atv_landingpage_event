@@ -1,0 +1,26 @@
+@use '../variables';
+
+.time-counter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-align: center;
+
+  p {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #counter {
+    color: variables.$backgorundButtonPrimary;
+  }
+
+  @media (max-width: 930px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+  }
+}

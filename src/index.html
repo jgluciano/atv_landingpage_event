@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
   <title>Ebac - Maratonando Python 2024</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles/main.scss">
 </head>
 
@@ -16,48 +17,90 @@
     <div class="container">
       <img class="hero__logo-ebac" src="./images/brazil_logo_white_port.png" alt="  ebac">
       <div class="hero__title">
-        <img src="./images/$dtjfas5l3qg.png" alt="Image 2024">
+        <img class="hero__title__image" src="./images/$dtjfas5l3qg.png" alt="Image 2024">
         <div class="hero__title__text">
           <p>INTENSIVÃO</p>
           <h1>Maratona <br> Full Stack Python</h1>
         </div>
       </div>
 
+      <div class="time-counter">
+        <p id="counter-text"></p>
+        <p id="counter"></p>
+      </div>
+
       <div class="infos-bar">
-        <div class="infos-bar__content__left">
+        <div class="infos-bar__content infos-bar__content--left">
           <div class="infos-bar__text">
             <h2>O que é?</h2>
             <p>3 cursos, com mais de 40 horas de aula</p>
           </div>
         </div>
 
-        <div class="infos-bar__content__right">
+        <div class="infos-bar__content infos-bar__content--right">
           <div class="infos-bar__text">
             <h2>Onde?</h2>
             <p>Através da plataforma de cursos da EBAC</p>
           </div>
         </div>
-
-
-        
-
-
-        <!--<ul class="infos-bar__content">
-          <li class="infos-bar__content__item">
-            
-          </li>
-          <li class="infos-bar__content__item">
-            <h2>Onde?</h2>
-            <p>Através da plataforma de cursos da EBAC</p>
-          </li>
-        </ul>-->
       </div>
 
-      <a href="#" class="button">ASSISTIR GRATUITAMENTE</a>
-      <p class="hero__purchase-call">Participe da Maratona Full Stack Python e descubra as melhores práticas para impulsionar seus projetos de desenvolvimento.</p>
+      <a href="#form-event" class="smooth-scroll button button--primary">ASSISTIR GRATUITAMENTE</a>
+      <p class="infos-bar__purchase-call">Participe da Maratona Full Stack Python e descubra as melhores práticas para
+        impulsionar seus projetos de desenvolvimento.</p>
 
     </div>
   </header>
+
+  <section class="event-regis">
+    <div class="container">
+      <div class="event-regis__content">
+        <h2>Por que participar da <br>Maratona Full Stack Python?</h2>
+        <div class="event-regis__content__details">
+          <i class="icon-check fa-regular fa-circle-check"></i>
+          <p>Explore os fundamentos e técnicas essenciais para dominar o desenvolvimento web com Python.</p>
+        </div>
+        <div class="event-regis__content__details">
+          <i class="icon-check fa-regular fa-circle-check"></i>
+          <p>Aproveite 5 módulos repletos de conhecimento para impulsionar sua jornada de aprendizado.</p>
+        </div>
+
+        <div class="event-regis__content__pounds button button--second">
+          <i class="icon-pounds fas fa-sign-language"></i>
+          <h>Acessível em libras</h>
+        </div>
+      </div>
+
+      <div id="form-event" class="event-regis__form">
+        <h2>Acesso rápido e 100% gratuito</h2>
+        <p>Basta preencher o formulário abaixo:</p>
+        <form class="">
+          <div class="event-regis__form__content">
+            <label for="name">Nome*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="event-regis__form__content">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email required">
+          </div>
+          <div class="event-regis__form__content">
+            <label for="question">7 + 2 = ?</label>
+            <input type="number" id="question" name="quest requiredion">
+          </div>
+          <button type="submit" class="button button--primary">ASSISTIR GRATUITAMENTE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright © 2022 EBAC -&nbsp;<a href="#">Política de Privacidade</a></p>
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/8a7daa21a0.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,152 @@
+@use 'variables';
+
+.event-regis {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__content {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 25px;
+    padding: 35px 35px 0 35px;
+
+    &__details {
+      display: flex;
+      margin-bottom: 20px;
+
+      .icon-check {
+        margin-top: 10px;
+        margin-right: 10px;
+        color: variables.$globalColorBlack;
+      }
+    }
+
+    &__pounds {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: center;
+      .icon-pounds {
+        margin-bottom: 5px;
+      }
+    }
+
+    h2 {
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: variables.$globalColorBlack;
+    }
+
+    p {
+      font-size: 22px;
+      color: variables.$globalColorGray;
+    }
+
+  }
+
+  &__form {
+    padding: 35px 35px 0 35px;
+    background-color: black;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 25px;
+
+    h2 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      input {
+        height: 32px;
+        color: variables.$globalColorGray;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .button {
+      
+      &--primary {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 930px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__content {
+      padding: 10px 10px 0 10px;
+      margin-right: 0px;
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      &__details {
+  
+        .icon-check {
+          margin-top: 10px;
+          margin-right: 10px;
+          color: variables.$globalColorBlack;
+        }
+      }
+    }
+    
+    &__form {
+      max-width: 430px;
+      margin-left: 0px;
+
+      h2 {
+        margin-top: 0px;
+      }
+  
+      .button {
+
+        &--primary {
+          margin-bottom: 0;
+          margin-top: 10px;
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+
+}

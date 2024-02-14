@@ -1,5 +1,8 @@
 @use 'variables';
 @use 'hero';
+@use 'event_regis';
+@use 'footer';
+@use './complements/time_counter';
 @use './complements/buttons';
 @use './complements/infos_bar';
 
@@ -9,8 +12,8 @@
   box-sizing: border-box;
   font-family: "Darker Grotesque", sans-serif;
   list-style: none;
+  text-decoration: none;
   color: variables.$mainTextColor;
-  margin: 0 auto;
 }
 
 .container {
@@ -18,9 +21,7 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 900px) {
-    
-  }
+  @media (max-width: 930px) {}
 
   @media (max-width: 1024px) {
     max-width: 90%;

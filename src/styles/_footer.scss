@@ -1,0 +1,25 @@
+@use 'variables';
+
+.footer {
+  padding: 25px 0;
+  background-color: variables.$globalColorBlack;
+
+  p {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  @media (max-width: 930px) {
+    padding: 20px 0;
+  background-color: variables.$globalColorBlack;
+
+  p {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    justify-content: center;
+  }
+  }
+}
